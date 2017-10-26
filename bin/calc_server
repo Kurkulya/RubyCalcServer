@@ -1,10 +1,6 @@
 require 'socket'
-require 'rack'
-require 'rack/lobster'
 
-app = Rack::Lobster.new
 server = TCPServer.new('localhost', 2345)
-
 
 def calc(n1,n2,op)
 	res = 0
